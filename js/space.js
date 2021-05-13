@@ -12,6 +12,7 @@
     const img = new Image();
     img.src = data.url;
     img.onload = function () {
+      document.getElementById("load-animation").remove();
       document.getElementById("image-frame").appendChild(img);
       document.getElementById("explanation").textContent = data.explanation;
       document.getElementById("image-title").textContent = data.title;
