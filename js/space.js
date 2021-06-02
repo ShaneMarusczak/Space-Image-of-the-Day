@@ -5,20 +5,20 @@
 
   const getImage = (cllbck) =>
     fetch(baseURL)
-      .then((r) => r.json())
+      .then((data) => data.json())
       .then(cllbck);
 
   function showImage(data) {
     const img = new Image();
     img.src = data.url;
+    img.id = "space-image";
+    img.classList.add("box-shadow");
     img.onload = function () {
       document.getElementById("load-animation").remove();
       document.getElementById("image-frame").appendChild(img);
       document.getElementById("explanation").textContent = data.explanation;
       document.getElementById("image-title").textContent = data.title;
     };
-
-    console.log(data);
   }
 
   window.onload = () => getImage(showImage);
