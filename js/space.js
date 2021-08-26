@@ -20,9 +20,9 @@
       document.getElementById("explanation").textContent = data.explanation;
       document.getElementById("image-title").textContent = data.title;
       document.getElementById("date-display").textContent = getDate(data.date);
-      var rgb = new ColorFinder().getMostProminentColor(img);
-      document.getElementsByTagName("html")[0].style.backgroundColor =
-        "rgb(" + rgb.r + "," + rgb.g + "," + rgb.b + ")";
+      // var rgb = new ColorFinder().getMostProminentColor(img);
+      // document.getElementsByTagName("html")[0].style.backgroundColor =
+      //   "rgb(" + rgb.r + "," + rgb.g + "," + rgb.b + ")";
     };
   }
 
