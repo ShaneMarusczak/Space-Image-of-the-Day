@@ -156,3 +156,35 @@ header {
 .box-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+#githubicon {
+  position: absolute;
+  top: 20px;
+  right: 6vw;
+  width: 70px;
+  height: 70px;
+  transition: 1.5s;
+  z-index: 0;
+  background-color: transparent;
+  border-radius: 30px;
+}
+
+#githubicon:hover {
+  transform: translateY(-5px);
+  background-color: azure;
+}
+
+#homeIcon {
+  position: absolute;
+  top: 20px;
+  left: 6vw;
+  width: 70px;
+  height: 70px;
+  transition: 1.5s;
+  z-index: 0;
+  background-color: transparent;
+}
+
+#homeIcon:hover {
+  transform: translateY(-5px);
+}
