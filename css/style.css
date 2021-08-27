@@ -149,8 +149,8 @@ header {
 }
 
 #space-image {
-  width: 85%;
-  height: 45%;
+  max-width: 85%;
+  max-height: 45%;
 }
 
 .box-shadow {
