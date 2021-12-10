@@ -1,7 +1,6 @@
 (() => {
   const baseURL =
     "https://api.nasa.gov/planetary/apod?api_key=m7PCOQhc96nYHYqI1Yg0CnbTsW2ZFdrrSJqoketz";
-  const apiKey = "m7PCOQhc96nYHYqI1Yg0CnbTsW2ZFdrrSJqoketz";
 
   const getImage = (cllbck) =>
     fetch(baseURL)
